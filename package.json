@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Stallin1.github.io/Stallin",
+  "homepage": "http://stallin1.github.io/Stallin",
   "name": "stallin",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
