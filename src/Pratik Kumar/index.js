@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import App from "./app.js";
+import Index from "./app";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Index />
   </React.StrictMode>,
   document.getElementById("root")
 );

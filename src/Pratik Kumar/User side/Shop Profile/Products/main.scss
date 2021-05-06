@@ -1,0 +1,9 @@
+.main-body {
+  display: grid;
+  grid-template-columns: 350px 36px auto;
+  .line {
+    width: 1px;
+    height: 60vh;
+    background-color: black;
+  }
+}
