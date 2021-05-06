@@ -15,14 +15,20 @@ const App = () => {
         <Route exact path="/shop">
           <Shop />
         </Route>
-        <Route exact path="/auth">
-          <Auth />
-        </Route>
         <Route exact path="/cart">
           <Cart />
         </Route>
         <Route exact path="/profile">
           <Profile />
+        </Route>
+        <Route exact path="/login">
+          <Auth />
+        </Route>
+        <Route exact path="/signup">
+          <Auth />
+        </Route>
+        <Route exact path="/forgot password">
+          <Auth />
         </Route>
       </Switch>
     </Router>
