@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/Stallin/static/js/main.d5c51715.chunk.js",
-    "main.js.map": "/Stallin/static/js/main.d5c51715.chunk.js.map",
+    "main.js": "/Stallin/static/js/main.9bf179a0.chunk.js",
+    "main.js.map": "/Stallin/static/js/main.9bf179a0.chunk.js.map",
     "runtime-main.js": "/Stallin/static/js/runtime-main.87908497.js",
     "runtime-main.js.map": "/Stallin/static/js/runtime-main.87908497.js.map",
-    "static/js/2.c621c00b.chunk.js": "/Stallin/static/js/2.c621c00b.chunk.js",
-    "static/js/2.c621c00b.chunk.js.map": "/Stallin/static/js/2.c621c00b.chunk.js.map",
+    "static/js/2.2eaeb8e9.chunk.js": "/Stallin/static/js/2.2eaeb8e9.chunk.js",
+    "static/js/2.2eaeb8e9.chunk.js.map": "/Stallin/static/js/2.2eaeb8e9.chunk.js.map",
     "index.html": "/Stallin/index.html",
-    "static/js/2.c621c00b.chunk.js.LICENSE.txt": "/Stallin/static/js/2.c621c00b.chunk.js.LICENSE.txt"
+    "static/js/2.2eaeb8e9.chunk.js.LICENSE.txt": "/Stallin/static/js/2.2eaeb8e9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.87908497.js",
-    "static/js/2.c621c00b.chunk.js",
-    "static/js/main.d5c51715.chunk.js"
+    "static/js/2.2eaeb8e9.chunk.js",
+    "static/js/main.9bf179a0.chunk.js"
   ]
 }
