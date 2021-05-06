@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Stallin/static/js/main.9bf179a0.chunk.js",
-    "main.js.map": "/Stallin/static/js/main.9bf179a0.chunk.js.map",
+    "main.js": "/Stallin/static/js/main.fefd7c5d.chunk.js",
+    "main.js.map": "/Stallin/static/js/main.fefd7c5d.chunk.js.map",
     "runtime-main.js": "/Stallin/static/js/runtime-main.87908497.js",
     "runtime-main.js.map": "/Stallin/static/js/runtime-main.87908497.js.map",
     "static/js/2.2eaeb8e9.chunk.js": "/Stallin/static/js/2.2eaeb8e9.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.87908497.js",
     "static/js/2.2eaeb8e9.chunk.js",
-    "static/js/main.9bf179a0.chunk.js"
+    "static/js/main.fefd7c5d.chunk.js"
   ]
 }
