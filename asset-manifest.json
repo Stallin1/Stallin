@@ -1,23 +1,17 @@
 {
   "files": {
-    "main.css": "/Stallin/static/css/main.1635e87c.chunk.css",
-    "main.js": "/Stallin/static/js/main.00dc70bd.chunk.js",
-    "main.js.map": "/Stallin/static/js/main.00dc70bd.chunk.js.map",
-    "runtime-main.js": "/Stallin/static/js/runtime-main.d3b904f2.js",
-    "runtime-main.js.map": "/Stallin/static/js/runtime-main.d3b904f2.js.map",
-    "static/js/2.579a9eb1.chunk.js": "/Stallin/static/js/2.579a9eb1.chunk.js",
-    "static/js/2.579a9eb1.chunk.js.map": "/Stallin/static/js/2.579a9eb1.chunk.js.map",
-    "static/js/3.c0dfe8c1.chunk.js": "/Stallin/static/js/3.c0dfe8c1.chunk.js",
-    "static/js/3.c0dfe8c1.chunk.js.map": "/Stallin/static/js/3.c0dfe8c1.chunk.js.map",
+    "main.js": "/Stallin/static/js/main.49640714.chunk.js",
+    "main.js.map": "/Stallin/static/js/main.49640714.chunk.js.map",
+    "runtime-main.js": "/Stallin/static/js/runtime-main.87908497.js",
+    "runtime-main.js.map": "/Stallin/static/js/runtime-main.87908497.js.map",
+    "static/js/2.d1c9dd0b.chunk.js": "/Stallin/static/js/2.d1c9dd0b.chunk.js",
+    "static/js/2.d1c9dd0b.chunk.js.map": "/Stallin/static/js/2.d1c9dd0b.chunk.js.map",
     "index.html": "/Stallin/index.html",
-    "static/css/main.1635e87c.chunk.css.map": "/Stallin/static/css/main.1635e87c.chunk.css.map",
-    "static/js/2.579a9eb1.chunk.js.LICENSE.txt": "/Stallin/static/js/2.579a9eb1.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Stallin/static/media/logo.6ce24c58.svg"
+    "static/js/2.d1c9dd0b.chunk.js.LICENSE.txt": "/Stallin/static/js/2.d1c9dd0b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3b904f2.js",
-    "static/js/2.579a9eb1.chunk.js",
-    "static/css/main.1635e87c.chunk.css",
-    "static/js/main.00dc70bd.chunk.js"
+    "static/js/runtime-main.87908497.js",
+    "static/js/2.d1c9dd0b.chunk.js",
+    "static/js/main.49640714.chunk.js"
   ]
 }
