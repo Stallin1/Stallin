@@ -1,5 +1,7 @@
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Auth from "./User/auth/auth";
+import Login from "./User/auth/customer/Login/Login";
+import Register from "./User/auth/customer/Register/Register";
 import Cart from "./User/cart/cart";
 import Home from "./User/home/home";
 import Profile from "./User/profile/profile";
@@ -22,10 +24,10 @@ const App = () => {
           <Profile />
         </Route>
         <Route exact path="/login">
-          <Auth />
+          <Login />
         </Route>
         <Route exact path="/signup">
-          <Auth />
+          <Register />
         </Route>
         <Route exact path="/forgot password">
           <Auth />

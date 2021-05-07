@@ -1,5 +1,18 @@
+import Login from './customer/Login/Login.js';
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 const Auth = () => {
-  return <h1>Auth</h1>;
+return (
+<Router>
+<Switch>
+<Route exact path="/login">
+<Login/>
+</Route>
+<Route exact path="/login">
+<Login/>
+</Route>
+</Switch>
+</Router>
+);
 };
 
 export default Auth;
