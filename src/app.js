@@ -4,6 +4,7 @@ import Cart from "./User/cart/cart";
 import Home from "./User/home/home";
 import Profile from "./User/profile/profile";
 import Shop from "./User/shop/shop";
+import "./app.css";
 
 const App = () => {
   return (

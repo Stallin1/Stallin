@@ -1,5 +1,14 @@
+import React from "react";
+import Landing from "./components/Landing.jsx";
+import Main from "./components/main";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Landing />
+      <Main />
+    </>
+  );
 };
 
 export default Home;

@@ -1,0 +1,11 @@
+main {
+  padding: 30px 10%;
+}
+.multicard-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
