@@ -45,7 +45,6 @@ function Landing() {
             aria-controls="simple-menu"
             aria-haspopup="true"
             onClick={handleClick}
-            href="/#"
           >
             <AccountCircleIcon style={navLink} />
           </Button>
