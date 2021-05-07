@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Stallin/static/css/main.77960342.chunk.css",
+    "main.css": "/Stallin/static/css/main.36eb8d81.chunk.css",
     "main.js": "/Stallin/static/js/main.b1e17704.chunk.js",
     "main.js.map": "/Stallin/static/js/main.b1e17704.chunk.js.map",
     "runtime-main.js": "/Stallin/static/js/runtime-main.87908497.js",
@@ -10,7 +10,7 @@
     "static/js/2.395be20e.chunk.js.map": "/Stallin/static/js/2.395be20e.chunk.js.map",
     "index.html": "/Stallin/index.html",
     "static/css/2.38051602.chunk.css.map": "/Stallin/static/css/2.38051602.chunk.css.map",
-    "static/css/main.77960342.chunk.css.map": "/Stallin/static/css/main.77960342.chunk.css.map",
+    "static/css/main.36eb8d81.chunk.css.map": "/Stallin/static/css/main.36eb8d81.chunk.css.map",
     "static/js/2.395be20e.chunk.js.LICENSE.txt": "/Stallin/static/js/2.395be20e.chunk.js.LICENSE.txt",
     "static/media/Landing-img.692404d9.svg": "/Stallin/static/media/Landing-img.692404d9.svg",
     "static/media/login.c8c15137.svg": "/Stallin/static/media/login.c8c15137.svg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.87908497.js",
     "static/css/2.38051602.chunk.css",
     "static/js/2.395be20e.chunk.js",
-    "static/css/main.77960342.chunk.css",
+    "static/css/main.36eb8d81.chunk.css",
     "static/js/main.b1e17704.chunk.js"
   ]
 }
