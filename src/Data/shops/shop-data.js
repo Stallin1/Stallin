@@ -1,18 +1,21 @@
-const shop = [
+export const shops = [
   {
     id: 1,
     name: "Jhun Jhun Wala",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/91dnN7b4S1L._SL1500_.jpg",
+      "https://www.collinsdictionary.com/images/full/supermarket_406913140_1000.jpg?version=4.0.148",
     category: "Rashan Store",
     address:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "400m away",
     map: "",
+    offerImage: "https://img.icons8.com/color/48/000000/discount--v3.png",
     offers: "10% off on Household items",
     star: "3.4",
     rating: "40+ Rating",
     bestseller: "#bestseller",
+    ownersName: "Jhun Jhun Wala & Sons",
+    socialLinks: "example.com",
     products: [
       {
         id: 1,
@@ -124,16 +127,17 @@ const shop = [
     id: 2,
     name: "Chintu Ki Dawaiya",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/91dnN7b4S1L._SL1500_.jpg",
+      "https://www.collinsdictionary.com/images/full/supermarket_406913140_1000.jpg?version=4.0.148",
     category: "Medical Store",
     address:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "1Km away",
     map: "",
-
     star: "3.4",
     rating: "40+ Rating",
     bestseller: "#bestseller",
+    ownersName: "Jhun Jhun Wala & Sons",
+    socialLinks: "example.com",
     products: [
       {
         id: 1,
@@ -245,16 +249,19 @@ const shop = [
     id: 2,
     name: "Chandu Ki Kitabe",
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/91dnN7b4S1L._SL1500_.jpg",
+      "https://www.collinsdictionary.com/images/full/supermarket_406913140_1000.jpg?version=4.0.148",
     category: "Statonary Shop",
     address:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "1Km away",
     map: "",
+    offerImage: "https://img.icons8.com/color/48/000000/discount--v3.png",
     offers: "20% off on Stationary items",
 
     star: "3.4",
     rating: "40+ Rating",
+    ownersName: "Jhun Jhun Wala & Sons",
+    socialLinks: "example.com",
     products: [
       {
         id: 1,
