@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Stallin/static/css/main.d551d2dd.chunk.css",
-    "main.js": "/Stallin/static/js/main.b21ba2cb.chunk.js",
-    "main.js.map": "/Stallin/static/js/main.b21ba2cb.chunk.js.map",
+    "main.js": "/Stallin/static/js/main.c3bd6118.chunk.js",
+    "main.js.map": "/Stallin/static/js/main.c3bd6118.chunk.js.map",
     "runtime-main.js": "/Stallin/static/js/runtime-main.87908497.js",
     "runtime-main.js.map": "/Stallin/static/js/runtime-main.87908497.js.map",
     "static/js/2.1225ada0.chunk.js": "/Stallin/static/js/2.1225ada0.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.87908497.js",
     "static/js/2.1225ada0.chunk.js",
     "static/css/main.d551d2dd.chunk.css",
-    "static/js/main.b21ba2cb.chunk.js"
+    "static/js/main.c3bd6118.chunk.js"
   ]
 }
