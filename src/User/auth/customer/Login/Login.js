@@ -33,7 +33,7 @@ function Login() {
             <div className="formItem"></div>
             <PasswordField label="Password" type="password" />
             <div className="formItem"></div>
-            <button className="formItem signinButton" type="submit">
+            <button className="formItem signinButton" type="button">
               Sign In
             </button>
             <div className="formItem"></div>

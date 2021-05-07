@@ -35,7 +35,7 @@ return (
 <PasswordField label="Confirm Password" type="password" className="rowItem"/>
 </div>
 <div className="formItem"></div>
-<button className="formItem signinButton" type="submit">Sign Up</button>
+<button className="formItem signinButton" type="button">Sign Up</button>
 <div className="formItem"></div>
 <span className="smallText">Already have an account? <Link to="/login" className="getStarted">Sign In</Link></span>
 </form>
