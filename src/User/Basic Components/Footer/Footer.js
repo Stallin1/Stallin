@@ -10,16 +10,27 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 const Footer = (props) => {
+  var interval = null;
   const [aboutSelected, aboutSelectedToggle] = useState(false);
   const [contactSelected, contactSelectedToggle] = useState(false);
     const onAboutClickedHandler = () => {
         aboutSelectedToggle(!aboutSelected);
-        if (contactSelected) contactSelectedToggle(!contactSelected);
+      if (contactSelected) contactSelectedToggle(!contactSelected);
+      interval = setInterval(scrollToBottom, 100);
   };
     const onContactClickedHandler = () => {
-        contactSelectedToggle(!contactSelected);
-        if (aboutSelected) aboutSelectedToggle(!aboutSelected);
+      contactSelectedToggle(!contactSelected);
+      if (aboutSelected) aboutSelectedToggle(!aboutSelected);
+      interval = setInterval(scrollToBottom, 100);
   };
+  const scrollToBottom = () => {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
+    clearInterval(interval);
+  }
   return (
     <div className="footerContainer">
       <div className="footer-bar">
@@ -43,6 +54,7 @@ const Footer = (props) => {
       </div>
       <About className={aboutSelected ? "about" : "hidden"} />
       <Contact className={contactSelected ? "about" : "hidden"} />
+      <MadeBy />
     </div>
   );
 };
@@ -73,23 +85,23 @@ const About = (props) => {
           <div className="avatars">
             <div className="avatar">
               <Avatar src={profileImg} className={classes.large} />
-              <span>Sample Name</span>
+              <span>Jayesh Sharma</span>
             </div>
             <div className="avatar">
               <Avatar className={classes.large} src={profileImg} />
-              <span>Sample Name</span>
+              <span>Jayesh Sharma</span>
             </div>
             <div className="avatar">
               <Avatar className={classes.large} src={profileImg} />
-              <span className="">Sample Name</span>
+              <span className="">Jayesh Sharma</span>
             </div>
             <div className="avatar">
               <Avatar className={classes.large} src={profileImg} />
-              <span>Sample Name</span>
+              <span>Jayesh Sharma</span>
             </div>
             <div className="avatar">
               <Avatar className={classes.large} src={profileImg}/>
-              <span>Sample Name</span>  
+              <span>Jayesh Sharma</span>  
             </div>
           </div>
         </div>
@@ -111,4 +123,9 @@ const Contact = (props) => {
       </div>
     );
 };
+const MadeBy = (props) => {
+  return (
+    <div className="madeBy">Made By IIITIANS with &#x1F496;</div>
+  );
+}
 export default Footer;

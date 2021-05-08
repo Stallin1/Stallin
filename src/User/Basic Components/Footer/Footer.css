@@ -1,12 +1,12 @@
 .footerContainer{
 display: flex;
 flex-direction: column;
-width: 100vw;
+width: 100%;
 }
 .footer-bar{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     height: 48px;
     background-color: #F1F1F1;
 }
@@ -17,15 +17,26 @@ width: 100vw;
     font-family: Helvetica, sans-serif;
     cursor: pointer;
     color:#676767;
+    transition:background-color 0.3s;
+    user-select: none;
+}
+.footer-link-not-selected:hover{
+    background-color: #E5E5E5;
 }
 .footer-link-selected{
     padding: 8px;
     margin-right:24px;
+    user-select: none;
     font-size: 24px;
     cursor: pointer;
     font-family: Helvetica, sans-serif;
-    color:#676767;
+    color:#126386;
     background-color: #E0E0E0;
+    transition: background-color 0.3s;
+    
+}
+.footer-link-selected:hover{
+    background-color: #D8D8D8;
 }
 .empty-element{
     width:100px;
@@ -37,11 +48,12 @@ width: 100vw;
     margin-right: auto;
     justify-content: center;
     text-align: center;
+    width:100%;
 }
 .about-inner-container{
     display: flex;
     flex-direction: column;
-    width:60vw;
+    width:60%;
     overflow: hidden;
     justify-content: center;
 }
@@ -50,7 +62,7 @@ width: 100vw;
     font-size:20px;
     font-family: Helvetica, sans-serif;
     margin-top: 48px;
-    width: 60vw;
+    width: 100%;
 }
 .avatars{
 display: flex;
@@ -60,13 +72,15 @@ text-align: center;
 margin-top: 48px;
 margin-left: auto;
 margin-right: auto;
-width: 60vw;
+width: 100%;
+margin-bottom: 48px;
 overflow:visible;
 }
 .avatar{
     font-family:Helvetica, sans-serif;
     font-size: 16px;
-    color: #676767;
+    font-weight: bold;
+    color: #777777;
     margin-right: 32px;
 }
 .hidden{
@@ -89,6 +103,18 @@ overflow:visible;
 .sendMessageButton:hover{
     background-color: #62accc;
 }
+.madeBy{
+    background-color: #7B7B7B;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    width:100%;
+    height:24px;
+    margin:0;
+    user-select: none;
+    font-size:16px;
+}
 @media only screen and (max-width: 600px){
     .avatars{
         flex-direction: column;
@@ -98,9 +124,9 @@ overflow:visible;
         margin: 0;
     }
     .about-text{
-        width: 90vw;
+        width: 100%;
     }
     .about-inner-container{
-        width: 90vw;
+        width: 100%;
     }
 }
