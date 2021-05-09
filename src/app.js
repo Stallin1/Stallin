@@ -1,5 +1,5 @@
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Auth from "./User/auth/auth";
+
 import Login from "./User/auth/customer/Login/Login";
 import ForgotPassword from "./User/auth/customer/ForgotPassword/ForgotPassword";
 import Register from "./User/auth/customer/Register/Register";
