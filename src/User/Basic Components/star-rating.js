@@ -126,4 +126,4 @@ const StarRatingNegative = (starratenegative) => {
   });
 };
 
-export default { StarRatingPositive, StarRatingNegative, StarRatingFraction };
+export default { StarRatingPositive, StarRatingFraction, StarRatingNegative };

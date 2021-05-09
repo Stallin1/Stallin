@@ -65,10 +65,8 @@ function homepageCard(props) {
         </div>
       </div>
       <div className="card-button-container">
-        <Link to="/shop">
-          <a className="card-btn" href="/">
-            Shop Now
-          </a>
+        <Link to={props.link}>
+          <div className="card-btn">Shop Now</div>
         </Link>
       </div>
     </div>
