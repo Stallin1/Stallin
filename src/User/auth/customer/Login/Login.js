@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid} from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "fontsource-roboto";
 import EmailField from "../../login_signup/EmailField";
@@ -9,10 +9,12 @@ import "./Login.css";
 import IllustrationSvg from "../../resources/login.svg";
 function Login() {
   return (
-    <Grid>
-      <div elevation={10} className="mainContainer">
+    <Grid className="background">
+      <Paper elevation={20} className="mainContainer">
         <div className="illustration-box">
-          <img src={IllustrationSvg} alt="login" />
+          <Link to="/">
+            <img src={IllustrationSvg} alt="login" />
+          </Link>
         </div>
         <div className="form-box">
           <div className="headingTextContainer">
@@ -29,9 +31,12 @@ function Login() {
               label="Email / Phone Number"
               type="text"
               className="formItem"
-            />	
+            />
             <div className="formItem"></div>
             <PasswordField label="Password" type="password" />
+            <Link to="/forgot_password" className="forgot-password">
+              Forgot Password?
+            </Link>
             <div className="formItem"></div>
             <button className="formItem signinButton" type="button">
               Sign In
@@ -45,7 +50,7 @@ function Login() {
             </span>
           </form>
         </div>
-      </div>
+      </Paper>
     </Grid>
   );
 }
