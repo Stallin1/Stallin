@@ -15,6 +15,13 @@ const navLink = {
   color: "#fff",
   fontSize: "30px",
 };
+const navbarLink = {
+  textDecoration: "none",
+  color: "#000",
+};
+const menuLinks = {
+  transform: "translate(-9px, 7px)",
+};
 
 function Landing() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -55,11 +62,12 @@ function Landing() {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}
+            style={menuLinks}
           >
-            <Link to="/login">
+            <Link to="/login" style={navbarLink}>
               <MenuItem onClick={handleClose}>Login</MenuItem>
             </Link>
-            <Link to="/signup">
+            <Link to="/signup" style={navbarLink}>
               <MenuItem onClick={handleClose}>Sign Up</MenuItem>
             </Link>
           </Menu>

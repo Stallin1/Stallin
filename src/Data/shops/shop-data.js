@@ -1,3 +1,4 @@
+import DiscountBadge from "../../User/Images/sp.png";
 export const shops = [
   {
     id: 1,
@@ -11,8 +12,8 @@ export const shops = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "400m away",
     map: "",
-    offerImage: "https://img.icons8.com/color/48/000000/discount--v3.png",
-    offers: "10% off on Household items",
+    offerImage: DiscountBadge,
+    offers: "10%",
     star: "3.4",
     rating: "40+ Rating",
     bestseller: "#bestseller",
@@ -31,6 +32,7 @@ export const shops = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "1Km away",
     map: "",
+    offers: "",
     star: "3.4",
     rating: "40+ Rating",
     bestseller: "#bestseller",
@@ -155,8 +157,8 @@ export const shops = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et labore exercitationem.",
     direction: "1Km away",
     map: "",
-    offerImage: "https://img.icons8.com/color/48/000000/discount--v3.png",
-    offers: "20% off on Stationary items",
+    offerImage: DiscountBadge,
+    offers: "20%",
 
     star: "3.4",
     rating: "40+ Rating",

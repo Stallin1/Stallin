@@ -3,7 +3,7 @@ import { Grid, Paper } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import IllustrationSvg from "../../resources/login.svg";
-import "fontsource-roboto";
+// import "fontsource-roboto";
 import EmailField from "../../login_signup/EmailField";
 import PasswordField from "../../login_signup/PasswordField";
 import SimpleField from "../../login_signup/SimpleField";

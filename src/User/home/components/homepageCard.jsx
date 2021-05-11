@@ -4,10 +4,20 @@ import Rating from "@material-ui/lab/Rating";
 import MailIcon from "@material-ui/icons/Mail";
 import { Link } from "react-router-dom";
 
-function homepageCard(props) {
+function HomepageCard(props) {
   return (
     <div className="card-container">
       <div className="cover-img-container">
+        <span className="discount-container">
+          <p>{props.offers} </p>
+          <img
+            src={props.offerImage}
+            className="discount-img"
+            title="Discount badge"
+          />
+        </span>
+
+        <span className="bestseller-tag">{props.bestseller}</span>
         <img src={props.image} alt={props.name} className="card-cover" />
         <span className="overlay-plate">
           <span className="overlay-links">
@@ -48,10 +58,7 @@ function homepageCard(props) {
             Get direction
           </a>
         </div>
-        <div className="discount-offer">
-          <img src={props.offerImage} alt="sicount tag" />
-          <span>{props.offers}</span>
-        </div>
+
         <div>
           <Rating
             name="half-rating-read"
@@ -73,4 +80,4 @@ function homepageCard(props) {
   );
 }
 
-export default homepageCard;
+export default HomepageCard;

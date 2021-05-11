@@ -6,6 +6,7 @@ import Register from "./User/auth/customer/Register/Register";
 import Cart from "./User/cart/cart";
 import Home from "./User/home/home";
 import Profile from "./User/profile/profile";
+import Searchfilter from "./User/Basic Components/SearchFilter/serchFilter";
 
 import "./app.css";
 
@@ -34,6 +35,9 @@ const App = () => {
         </Route>
         <Route exact path="/forgot_password">
           <ForgotPassword />
+        </Route>
+        <Route exact path="/sf">
+          <Searchfilter />
         </Route>
       </Switch>
     </Router>

@@ -160,3 +160,37 @@
   top: -6px;
   font-size: 14px;
 }
+.bestseller-tag {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #cfb000;
+  padding: 3px 7px;
+  border-radius: 40px;
+}
+
+/*12 point star*/
+.discount-container {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.discount-container p {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  top: 0px;
+  left: 9px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.discount-img {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+}

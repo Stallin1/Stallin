@@ -1,7 +1,7 @@
-import React, {useState} from "react";
-import { Grid, Paper,TextField,InputAdornment } from "@material-ui/core";
+import React, { useState } from "react";
+import { Grid, Paper, TextField, InputAdornment } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import "fontsource-roboto";
+// import "fontsource-roboto";
 import EmailField from "../../login_signup/EmailField";
 import "./ForgotPassword.css";
 import IllustrationSvg from "../../resources/login.svg";
@@ -11,12 +11,14 @@ function ForgotPassword() {
   const sendOTP = () => {
     otpFieldVisibilityToggle(true);
     changeButtonLabel("Verify");
-  }
+  };
   return (
     <Grid className="background">
       <Paper elevation={20} className="mainContainer">
         <div className="illustration-box">
-          <Link to="/"><img src={IllustrationSvg} alt="login" /></Link>
+          <Link to="/">
+            <img src={IllustrationSvg} alt="login" />
+          </Link>
         </div>
         <div className="form-box">
           <div className="formItem"></div>
