@@ -1,5 +1,5 @@
 export const pratik ={
-    name="Pratik Kumar",
+    name:"Pratik Kumar",
     image:"",
     phone: "9031942176",
     email: "pratikmuz20gmail.com",
@@ -44,9 +44,8 @@ export const pratik ={
     },
 }
 
-
 export const abhishek ={
-    name="Abhishek Kumar",
+    name:"Abhishek Kumar",
     image:"",
     phone: "9031942176",
     email: "pratikmuz20gmail.com",
@@ -127,7 +126,7 @@ export const abhishek ={
 }
 
 export const jayesh ={
-    name="Jayesh Sharms",
+    name:"Jayesh Sharma",
     image:"",
     phone: "9031942176",
     email: "pratikmuz20gmail.com",

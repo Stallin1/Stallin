@@ -1,5 +1,9 @@
+import Orders from './Orders/Orders';
+import { jayesh } from '../../Data/customers/customer-imdivisual-data'
 const Profile = () => {
-  return <h1>Profile</h1>;
+  return (
+    <Orders userID={jayesh}/>
+  );
 };
 
 export default Profile;
