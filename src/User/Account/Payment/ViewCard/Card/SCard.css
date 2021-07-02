@@ -1,0 +1,74 @@
+.ViewCard {
+    box-shadow: 1px 1px 22px 2px rgba(0, 0, 0, 0.1);
+    width: 23rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-radius: 16px;
+}
+
+.ViewCard_Up {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ViewCard  .ViewCard_BankName {
+    font-weight: 500;
+}
+
+.ViewCard_Heading {
+    color: #B2B2B2;
+    font-size: 0.7rem;
+    margin-bottom: -1rem;
+}
+
+.ViewCard p {
+    line-height: 1rem;
+}
+
+.ViewCard_Right {
+    position: relative;
+}
+
+.ViewCard_Right img {
+    position: relative;
+    right: -0.7rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.ViewCard_Right p {
+    text-align: end;
+}
+
+.ViewCard_Strip {
+    height: 1.8rem;
+    width: 100%;
+    background-color: #444444;
+}
+
+.ViewCard_Down {
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.ViewCard_Down button {
+    width: 50%;
+    border: none;
+    outline: none;
+    background: none;
+    height: 2.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.ViewCard_Down button:hover {
+    color: #2A6F97;
+}
+
+.ViewCard_Down div {
+    width: 1px;
+    background: #b4b4b49f;
+}
+

@@ -1,0 +1,18 @@
+.Orders {
+    padding: 3.5rem;
+    width: 100%;
+}
+
+.Orders_head {
+    color: #2A6F97;
+    padding-bottom: 4px;
+    border-bottom: #2A6F97 solid 2px;
+    width: fit-content;
+}
+
+.Orders_section {
+    width: 100%;
+    padding: 3.5rem;
+    position: relative;
+    
+}

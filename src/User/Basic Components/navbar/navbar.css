@@ -1,0 +1,7 @@
+.Searchbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #cfcfcf;
+  padding: 30px 0;
+}

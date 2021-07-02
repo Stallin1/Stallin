@@ -1,0 +1,22 @@
+.Order .MuiButtonBase-root .MuiAccordionSummary-content {
+    margin: 0;
+}
+
+.Order .MuiButtonBase-root .MuiAccordionSummary-content p {
+    margin-left: 0.7rem;
+}
+
+.Order  .MuiAccordion-root {
+    height: fit-content;
+}
+
+.Order .MuiAccordionSummary-root {
+    height: 2rem;
+    padding: 0 1.6rem;
+    background-color: #C2C2C2;
+    color: white;
+}
+
+.Order .OrderItemList .MuiButtonBase-root .MuiIconButton-root .MuiSvgIcon-root {
+    color: white;
+}
