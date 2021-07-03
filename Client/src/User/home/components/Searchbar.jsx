@@ -6,24 +6,25 @@ import "./Searchbar.css";
 function Searchbar(props) {
    return (
       <div className="searchbar-container">
-         <a href="/#" className="location-btn">
-            Location
-            <LocationOnIcon style={{ color: "#F44336" }} />
-         </a>
-         <input
-            className="searchbox"
-            type="text"
-            placeholder={props.placeholder}
-            onChange={props.onChange}
-         />
-         <a
-            href="/#"
-            type="submit"
-            onClick={props.onClick}
-            className="search-btn"
-         >
-            <SearchIcon style={{ fontSize: "35px" }} />
-         </a>
+         <div>
+            <button className="location-btn">
+               Location
+               <LocationOnIcon style={{ color: "#F44336" }} />
+            </button>
+            <input
+               className="searchbox"
+               type="text"
+               placeholder={props.placeholder}
+               onChange={props.onChange}
+            />
+            <button
+               type="submit"
+               onClick={props.onClick}
+               className="search-btn"
+            >
+               <SearchIcon style={{ fontSize: "35px" }} />
+            </button>
+         </div>
       </div>
    );
 }
