@@ -97,7 +97,11 @@ function Landing() {
                </a>
             </div>
             <div className="Landing-img-container">
-               <img src={LandingImg} alt="Stallin landing page " />
+               <img
+                  className="Landing-Img"
+                  src={LandingImg}
+                  alt="Stallin landing page "
+               />
             </div>
          </div>
       </header>

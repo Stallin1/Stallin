@@ -7,7 +7,6 @@
 
 .searchbox {
    width: 500px;
-   min-width: 250px;
    height: 3.3rem;
    padding: 0 70px 0 170px;
    border-radius: 15px;
@@ -66,4 +65,59 @@
 }
 .search-icon {
    font-size: 3em;
+}
+@media screen and (max-width: 800px) {
+   .searchbox {
+      width: 400px;
+      height: 3rem;
+   }
+   .search-btn {
+      width: 65px;
+      height: 50px;
+      top: -50px;
+   }
+}
+@media screen and (max-width: 667px) {
+   .searchbox {
+      width: 210px;
+      height: 3rem;
+   }
+   .search-btn {
+      width: 65px;
+      height: 50px;
+      top: -50px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .searchbox {
+      width: 160px;
+      height: 2.5rem;
+      padding-left: 110px;
+      padding-right: 30px;
+      font-size: 12px;
+   }
+   .search-btn {
+      width: 50px;
+      height: 43px;
+      top: -43px;
+   }
+   .MuiSvgIcon-root {
+      font-size: 25px !important;
+   }
+   .location-btn {
+      top: 35px;
+      left: 5px;
+      font-size: 14px;
+   }
+   .location-btn::after {
+      left: 100px;
+      height: 1.5rem;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .searchbox {
+      width: 120px;
+   }
 }
