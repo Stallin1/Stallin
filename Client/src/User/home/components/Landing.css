@@ -1,11 +1,12 @@
 .Top-section {
+   clip-path: polygon(0px 0px, 1850px 0px, 1850px 92%, 0px 100%);
    width: 100%;
    display: flex;
    flex-direction: column;
    height: 720px;
    background: linear-gradient(267.09deg, #014f86 -36.18%, #fcfcfc 151.18%);
    -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
-   clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
+   
 }
 .Nav-bar {
    display: flex;
