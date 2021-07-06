@@ -5,7 +5,13 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 40px 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .multicard-container {
+    justify-content: center;
+  }
 }
