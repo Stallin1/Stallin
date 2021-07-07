@@ -12,96 +12,100 @@ import "./Landing.css";
 import Searchbar from "./Searchbar";
 
 const navLink = {
-   color: "#fff",
-   fontSize: "30px",
+  color: "#fff",
+  fontSize: "30px",
 };
 const navbarLink = {
-   textDecoration: "none",
-   color: "#000",
+  textDecoration: "none",
+  color: "#000",
 };
 const menuLinks = {
-   transform: "translate(-9px, 7px)",
+  transform: "translate(-9px, 7px)",
 };
 
 function Landing() {
-   const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
-   const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-   };
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
-   const handleClose = () => {
-      setAnchorEl(null);
-   };
-   const handelSearch = () => {
-      alert("hi");
-   };
-   const searchBar = (e) => {
-      const value = e.target.value;
-      alert(`Search Changed to ` + value);
-   };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  const handelSearch = () => {
+    alert("hi");
+  };
+  const searchBar = (e) => {
+    const value = e.target.value;
+    alert(`Search Changed to ` + value);
+  };
 
-   return (
-      <header className="Top-section">
-         <nav className="Nav-bar">
-            <div className="Left-nav">
-               <img src={Logo} className="Home-logo" alt="Stallin's Logo" />
-            </div>
-            <div className="Right-nav">
-               <Link to="/cart">
-                  <Button>
-                     <Badge badgeContent={0} color="secondary" showZero>
-                        <ShoppingCartOutlinedIcon style={navLink} />
-                     </Badge>
-                  </Button>
-               </Link>
-               <Button
-                  aria-controls="simple-menu"
-                  aria-haspopup="true"
-                  onClick={handleClick}
-               >
-                  <AccountCircleIcon style={navLink} />
-               </Button>
+  return (
+    <header className="Top-section">
+      <nav className="Nav-bar">
+        <div className="Left-nav">
+          <img src={Logo} className="Home-logo" alt="Stallin's Logo" />
+        </div>
+        <div className="Right-nav">
+          <Link to="/cart">
+            <Button>
+              <Badge badgeContent={0} color="secondary" showZero>
+                <ShoppingCartOutlinedIcon style={navLink} />
+              </Badge>
+            </Button>
+          </Link>
+          <Button
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            onClick={handleClick}
+          >
+            <AccountCircleIcon style={navLink} />
+          </Button>
 
-               <Menu
-                  id="simple-menu"
-                  anchorEl={anchorEl}
-                  keepMounted
-                  open={Boolean(anchorEl)}
-                  onClose={handleClose}
-                  style={menuLinks}
-               >
-                  <Link to="/login" style={navbarLink}>
-                     <MenuItem onClick={handleClose}>Login</MenuItem>
-                  </Link>
-                  <Link to="/signup" style={navbarLink}>
-                     <MenuItem onClick={handleClose}>Sign Up</MenuItem>
-                  </Link>
-               </Menu>
-            </div>
-         </nav>
-         <div className="searchbar-wrapper-for-Landing-page">
-            <Searchbar
-               placeholder="Search for stores"
-               onClick={handelSearch}
-               onChange={searchBar}
-            />
-         </div>
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            style={menuLinks}
+          >
+            <Link to="/login" style={navbarLink}>
+              <MenuItem onClick={handleClose}>Login</MenuItem>
+            </Link>
+            <Link to="/signup" style={navbarLink}>
+              <MenuItem onClick={handleClose}>Sign Up</MenuItem>
+            </Link>
+          </Menu>
+        </div>
+      </nav>
+      <div className="searchbar-wrapper-for-Landing-page">
+        <Searchbar
+          placeholder="Search for stores"
+          onClick={handelSearch}
+          onChange={searchBar}
+        />
+      </div>
 
-         <div className="landing-container">
-            <div className="Landing-text-container">
-               <h1 className="Brand">STALLIN</h1>
-               <p className="tagline">Markets on your finger tip</p>
-               <a href="/#" className="Landing-btn">
-                  EXPLORE
-               </a>
-            </div>
-            <div className="Landing-img-container">
-               <img src={LandingImg} alt="Stallin landing page " />
-            </div>
-         </div>
-      </header>
-   );
+      <div className="landing-container">
+        <div className="Landing-text-container">
+          <h1 className="Brand">STALLIN</h1>
+          <p className="tagline">Markets on your finger tip</p>
+          <a href="/#" className="Landing-btn">
+            EXPLORE
+          </a>
+        </div>
+        <div className="Landing-img-container">
+          <img
+            className="Landing-Img"
+            src={LandingImg}
+            alt="Stallin landing page "
+          />
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export default Landing;

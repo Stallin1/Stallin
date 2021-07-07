@@ -4,8 +4,8 @@
   flex-direction: column;
   height: 720px;
   background: linear-gradient(267.09deg, #014f86 -36.18%, #fcfcfc 151.18%);
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 92%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 92%, 0px 100%);
 }
 .Nav-bar {
   display: flex;
@@ -70,4 +70,80 @@
   align-items: center;
   font-weight: 700;
   color: #044967;
+}
+
+@media screen and (max-width: 967px) {
+  .Brand {
+    font-size: 70px;
+  }
+  .tagline {
+    font-size: 20px;
+  }
+  .Landing-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .Landing-img-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Landing-Img {
+    max-width: 70%;
+  }
+  .Right-nav {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 773px) {
+  .Brand {
+    font-size: 50px;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+  .Landing-btn {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .Landing-img-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Landing-Img {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing-container {
+    justify-content: center;
+  }
+  .Landing-text-container {
+    align-items: center;
+  }
+
+  .Brand {
+    font-size: 60px;
+  }
+  .tagline {
+    font-size: 18px;
+  }
+  .Landing-btn {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .Landing-img-container {
+    display: none;
+  }
+  .Top-section {
+    height: 400px;
+  }
+  .searchbar-wrapper-for-Landing-page {
+    margin: 0;
+  }
 }
