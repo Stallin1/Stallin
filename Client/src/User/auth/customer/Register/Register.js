@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState}from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link , useHistory} from "react-router-dom";
 import "./Register.css";
 import IllustrationSvg from "../../resources/login.svg";
 // import "fontsource-roboto";
@@ -8,6 +8,34 @@ import EmailField from "../../login_signup/EmailField";
 import PasswordField from "../../login_signup/PasswordField";
 import SimpleField from "../../login_signup/SimpleField";
 function Register() {
+  const history = useHistory();
+  const [user, setUser] = useState({
+    email:"", phone:"", name:"", password:"", cpassword:""
+  });
+  let name, value;
+  const handleInputs=(e)=>{
+   name = e.target.name;
+   value = e.target.value;
+   console.log(name);
+   setUser({...user, [name]:value});
+
+  }
+  const PostData = async (e)=>{
+    e.preventDefault();
+    const {email, phone, name, password, cpassword} = user;
+     console.log(email);
+    const res = await fetch("/register" , {
+      method : "POST",
+      headers : {
+        "Content-type" : "application/json"
+      },
+      body:JSON.stringify({
+       email, phone, name, password, cpassword
+      })
+    });
+     const data = await res.json();
+     console.log(data);
+  }
   return (
     <Grid className="background">
       <Paper elevation={20} className="mainContainer">
@@ -23,18 +51,23 @@ function Register() {
               Experience the Ease Of Shopping
             </span>
           </div>
-          <form className="formContainer" action="/home">
+          <form className="formContainer" method="POST">
             <div className="formItem"></div>
-            <EmailField label="Email" type="text" className="formItem" />
+            <EmailField label="Email" type="text" className="formItem" name='email'  onChange={(e)=>handleInputs(e)}
+                value={user.email}/>
             <div className="formItem"></div>
             <div className="rowContainer">
               <SimpleField
                 label="Phone Number"
                 type="phone"
                 className="rowItem"
+                name='phone'
+                onChange={handleInputs}
+                value={user.phone}
               />
               <div className="separator"></div>
-              <SimpleField label="Name" type="text" className="rowItem" />
+              <SimpleField label="Name" type="text" className="rowItem" name='name'  onChange={(e)=>handleInputs(e)}
+                value={user.name}/>
             </div>
             <div className="formItem"></div>
             <div className="rowContainer">
@@ -42,18 +75,22 @@ function Register() {
                 label="Password"
                 type="password"
                 className="rowItem"
+                name='password'
+                onChange={(e)=>handleInputs(e)}
+                value={user.password}
               />
               <div className="separator"></div>
               <PasswordField
                 label="Confirm Password"
                 type="password"
                 className="rowItem"
+                name="cpassword"
+                onChange={(e)=>handleInputs(e)}
+                value={user.cpassword}
               />
             </div>
             <div className="formItem"></div>
-            <button className="formItem signinButton" type="button">
-              Sign Up
-            </button>
+            <input type="submit" className="formItem signinButton" onClick={(e)=>PostData(e)} value="Sign Up"/>
             <div className="formItem"></div>
             <span className="smallText">
               Already have an account?{" "}
