@@ -13,17 +13,18 @@ function Register() {
     email:"", phone:"", name:"", password:"", cpassword:""
   });
   let name, value;
-  const handleInputs=(e)=>{
+
+  const handleInputs=(e, user, setUser)=>{
    name = e.target.name;
    value = e.target.value;
-   console.log(name);
-   setUser({...user, [name]:value});
+   setUser({ ...user, [name]:value});
+   console.log(user);
 
   }
   const PostData = async (e)=>{
     e.preventDefault();
     const {email, phone, name, password, cpassword} = user;
-     console.log(email);
+     console.log(user);
     const res = await fetch("/register" , {
       method : "POST",
       headers : {
@@ -53,7 +54,7 @@ function Register() {
           </div>
           <form className="formContainer" method="POST">
             <div className="formItem"></div>
-            <EmailField label="Email" type="text" className="formItem" name='email'  onChange={(e)=>handleInputs(e)}
+            <EmailField label="Email" type="text" className="formItem" name='email' user={user} setUser={setUser} handleInputs={handleInputs}
                 value={user.email}/>
             <div className="formItem"></div>
             <div className="rowContainer">
@@ -62,11 +63,12 @@ function Register() {
                 type="phone"
                 className="rowItem"
                 name='phone'
-                onChange={handleInputs}
+                user={user} setUser={setUser}
+                handleInputs={handleInputs}
                 value={user.phone}
               />
               <div className="separator"></div>
-              <SimpleField label="Name" type="text" className="rowItem" name='name'  onChange={(e)=>handleInputs(e)}
+              <SimpleField label="Name" user={user} setUser={setUser} type="text" className="rowItem" name='name'  handleInputs={handleInputs}
                 value={user.name}/>
             </div>
             <div className="formItem"></div>
@@ -75,17 +77,19 @@ function Register() {
                 label="Password"
                 type="password"
                 className="rowItem"
+                user={user} setUser={setUser}
                 name='password'
-                onChange={(e)=>handleInputs(e)}
+                handleInputs={handleInputs}
                 value={user.password}
               />
               <div className="separator"></div>
               <PasswordField
                 label="Confirm Password"
                 type="password"
+                user={user} setUser={setUser}
                 className="rowItem"
                 name="cpassword"
-                onChange={(e)=>handleInputs(e)}
+                handleInputs={handleInputs}
                 value={user.cpassword}
               />
             </div>

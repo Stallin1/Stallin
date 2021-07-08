@@ -16,6 +16,8 @@ class EmailField extends Component {
       <TextField
         id={this.props.id}
         type={this.state.type}
+        name={this.props.name}
+        onChange={(e) => this.props.handleInputs(e, this.props.user, this.props.setUser)}
         label={this.state.label}
         style={this.state.style}
         InputProps={{

@@ -15,7 +15,9 @@ class SimpleField extends Component {
       <TextField
         id={this.props.id}
         type={this.state.type}
+        name = {this.props.name}
         label={this.state.label}
+        onChange={(e) => this.props.handleInputs(e, this.props.user, this.props.setUser)}
         style={this.state.style}
         InputProps={{
           startAdornment: (

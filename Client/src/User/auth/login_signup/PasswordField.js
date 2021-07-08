@@ -39,6 +39,8 @@ class PasswordField extends Component {
         type={this.state.type}
         label={this.state.label}
         style={this.state.style}
+        name={this.props.name}
+        onChange={(e) => this.props.handleInputs(e, this.props.user, this.props.setUser)}
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
